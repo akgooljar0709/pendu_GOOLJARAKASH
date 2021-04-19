@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/akash/Desktop/info_1/pendu_GOOLJARAKASH/include/dico.h
+
+/home/akash/Desktop/info_1/pendu_GOOLJARAKASH/src/main.c
+stdio.h
+-
+stdlib.h
+-
+ctype.h
+-
+string.h
+-
+../include/dico.h
+/home/akash/Desktop/info_1/pendu_GOOLJARAKASH/include/dico.h
+
