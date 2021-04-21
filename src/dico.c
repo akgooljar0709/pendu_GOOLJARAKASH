@@ -1,14 +1,3 @@
-/*
-Jeu du pendu
-Par M@teo21, pour le Site du Zér0
-www.siteduzero.com
-
-dico.c
-------
-
-Ces fonctions piochent au hasard un mot dans un fichier dictionnaire
-pour le jeu du pendu
-*/
 
 #include <stdio.h>
 #include <stdlib.h>

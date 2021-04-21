@@ -1,13 +1,3 @@
-/*
-Jeu du pendu
-Par M@teo21, pour le Site du Zér0
-www.siteduzero.com
-
-main.c
-------
-
-Fonctions principales de gestion du jeu
-*/
 
 #include <stdio.h>
 #include <stdlib.h>
