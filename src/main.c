@@ -24,10 +24,13 @@ int main(int argc, char* argv[])
     long coupsRestants = 8; // Compteur de coups restants (0 = mort)
     long i = 0; // Une petite variable pour parcourir les tableaux
     long tailleMot = 0;
-    char z = 0;
-    
-    printf("Bienvenue dans le Pendu !\n\n");
+    char lettre_hint = 1;
 
+
+    
+
+    printf("Bienvenue dans le Pendu !\n\n");
+    printf("Regles Du jeux\n\n");
     
 
     if (!piocherMot(motSecret))
@@ -59,6 +62,8 @@ int main(int argc, char* argv[])
 
             if (lettreTrouvee[i]) // Si on a trouvé la lettre n°i
                 printf("%c", motSecret[i]); // On l'affiche
+
+            
                 
             else
                 printf("_"); // Sinon, on affiche une étoile pour les lettres non trouvées
@@ -68,15 +73,52 @@ int main(int argc, char* argv[])
         printf("\nProposez une lettre : ");
         lettre = lireCaractere();
 
+        char indice[10];
+        
+        //Section Hint
+              if(coupsRestants <= 6)
+               {
 
-        /*
+                    printf("\nVoudriez vous avoir un indice [oui/non]:\n");
+                    scanf("%s",indice);
 
-            char z = lireCaractere();
-             if(strcmp(z,"HELP") == 0 ){
-                printf("%c\n", motSecret[1]);
-            }
+                    if(strcmp(indice,"oui") == 0)
+                    {
+                        char z = motSecret[rand()% tailleMot];
+                        printf("Hint : %c \n", z);
+                        
+                        lettre = hint(z);//on revoie la valeur de la fonction z et on l'envoie a lettre
+                        printf("%c\n", lettre);
 
-        */
+
+                    }
+
+                    else if(strcmp(indice,"non") == 0)
+                    {
+                        printf("\nProposez une lettre : ");
+                        char y = lettre;
+
+                    }
+
+                  
+
+               }
+           
+
+                
+                            
+                    
+              
+                        
+                            
+                   
+
+
+
+
+             
+
+                 //on revoie la valeur de z a lettre
 
 
         // Si ce n'était PAS la bonne lettre
@@ -84,6 +126,8 @@ int main(int argc, char* argv[])
         {
             coupsRestants--; // On enlève un coup au joueur
         }
+
+        
     }
 
 

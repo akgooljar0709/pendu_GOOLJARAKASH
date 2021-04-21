@@ -20,6 +20,7 @@ int nombreAleatoire(int nombreMax);
 int gagne(int lettreTrouvee[], long tailleMot);
 int rechercheLettre(char lettre, char motSecret[], int lettreTrouvee[]);
 char lireCaractere();
+char hint(char z);
 
 #endif
 

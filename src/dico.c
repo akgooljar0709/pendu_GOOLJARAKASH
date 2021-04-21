@@ -96,12 +96,14 @@ char lireCaractere()
 {
     char caractere = 0;
 
+
+     // On lit les autres caractères mémorisés un à un jusqu'à l'\n
+    while (getchar() != '\n') ;
     caractere = getchar(); // On lit le premier caractère
     caractere = toupper(caractere); // On met la lettre en majuscule si elle ne l'est pas déjà
     
    
-    // On lit les autres caractères mémorisés un à un jusqu'à l'\n
-    while (getchar() != '\n') ;
+   
 
     return caractere; // On retourne le premier caractère qu'on a lu
 }
@@ -125,6 +127,7 @@ int rechercheLettre(char lettre, char motSecret[], int lettreTrouvee[])
 {
     long i = 0;
     int bonneLettre = 0;
+   
 
     // On parcourt motSecret pour vérifier si la lettre proposée y est
     for (i = 0 ; motSecret[i] != '\0' ; i++)
@@ -134,8 +137,33 @@ int rechercheLettre(char lettre, char motSecret[], int lettreTrouvee[])
             bonneLettre = 1; // On mémorise que c'était une bonne lettre
             lettreTrouvee[i] = 1; // On met à 1 le case du tableau de booléens correspondant à la lettre actuelle
         }
+
+        /*else if(lettre == 4)
+        {
+
+                printf("%c\n",motSecret[1]);
+    
+            }*/
+
     }
+
+
+
+    
 
     return bonneLettre;
 }
 
+
+char hint(char z)
+{
+    char caractere = 0;
+
+    caractere = z; // On lit le premier caractère
+    caractere = toupper(caractere); // On met la lettre en majuscule si elle ne l'est pas déjà
+
+    // On lit les autres caractères mémorisés un à un jusqu'à l'\n
+    while (getchar() != '\n') ;
+
+    return caractere; // On retourne le premier caractère qu'on a lu
+}
