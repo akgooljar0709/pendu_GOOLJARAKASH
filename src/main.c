@@ -20,7 +20,6 @@ int main(int argc, char* argv[])
     
 
     printf("Bienvenue dans le Pendu !\n\n");
-    printf("Regles Du jeux\n\n");
     
 
     if (!piocherMot(motSecret))
