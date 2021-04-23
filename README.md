@@ -28,9 +28,7 @@ Deplacez vous dans là où se trouve le binaire pendu et sur le terminal :
 ```
 ./pendu
 ```
-## Exécution des tests
 
-Expliquer comment exécuter les tests automatisés pour ce système
 
 
 
@@ -41,7 +39,7 @@ Expliquer comment exécuter les tests automatisés pour ce système
 
 
 
-### Exemple Du Projet
+## Exécution des tests
 
 
 
